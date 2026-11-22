@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
         // Fix this line so that the Player GameObject is the PARENT of the seed.
         // That way, the seed will move with the player.
 
-        GameObject seed = Instantiate(_seedPrefab);
+        GameObject seed = Instantiate(_seedPrefab, gameObject.transform);
 
         // STEP 4 -------------------------------------------------------------
 
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
         // You might want to use _spawnUp and _spawnLeft to put the seed to the
         //      left and slightly above the player.
         // You will probably also need Transform.TransformDirection() ;)
+        seed.transform.Translate(transform.TransformDirection(_spawnLeft * -1, _spawnUp, 0));
 
         
         // STEP 5 -------------------------------------------------------------
@@ -90,6 +92,8 @@ public class Player : MonoBehaviour
 
         // STEP 7 -------------------------------------------------------------
         // Set the animation parameters to play the throwing animation.
+        // _animator.Play("Attack");
+        _animator.SetTrigger("throwing");
         
 
 
@@ -120,6 +124,14 @@ public class Player : MonoBehaviour
         // Set the animation parameters to play the walking animation.
         // You might need the mouseY, mouseX, vertical, and horizontal variables
         //      that are above this step :)
+        if(mouseY > 0.2f || mouseX > 0.2f || vertical > 0.2f || horizontal > 0.2f)
+        {
+            _animator.SetBool("walking", true);
+        }
+        else
+        {
+            _animator.SetBool("walking", false);
+        }
 
 
         // STEP 8 -------------------------------------------------------------

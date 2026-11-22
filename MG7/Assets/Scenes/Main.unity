@@ -3916,8 +3916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   _animator: {fileID: 8264938254608900084}
-  _spawnUp: 0.5
-  _spawnLeft: 0.2
+  _spawnUp: -0.4
+  _spawnLeft: 0.3
   _seedPrefab: {fileID: 6843548009461615161, guid: 399722cd649d64729b8a23b5eae038d0, type: 3}
   _moveSpeed: 5
   _mouseSensitivity: 10
