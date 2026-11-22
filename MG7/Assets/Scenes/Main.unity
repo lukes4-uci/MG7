@@ -354,6 +354,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -719,6 +720,7 @@ GameObject:
   - component: {fileID: 406130386}
   - component: {fileID: 406130385}
   - component: {fileID: 406130387}
+  - component: {fileID: 406130388}
   m_Layer: 0
   m_Name: Sparrow (3)
   m_TagString: Untagged
@@ -780,6 +782,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &406130388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406130384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.01
+  _popUpSpeed: 0.8
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,14 +823,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -858,7 +875,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -1017,6 +1034,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1283,6 +1301,7 @@ GameObject:
   - component: {fileID: 704408758}
   - component: {fileID: 704408757}
   - component: {fileID: 704408759}
+  - component: {fileID: 704408760}
   m_Layer: 0
   m_Name: Sparrow
   m_TagString: Untagged
@@ -1344,6 +1363,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &704408760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704408756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.01
+  _popUpSpeed: 0.8
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &816085032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1389,7 @@ GameObject:
   - component: {fileID: 816085034}
   - component: {fileID: 816085033}
   - component: {fileID: 816085035}
+  - component: {fileID: 816085036}
   m_Layer: 0
   m_Name: Sparrow (2)
   m_TagString: Untagged
@@ -1416,6 +1451,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &816085036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816085032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.01
+  _popUpSpeed: 0.8
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,6 +1932,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1226188285
 MeshFilter:
@@ -2006,6 +2057,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -2138,6 +2190,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -2266,6 +2319,7 @@ GameObject:
   - component: {fileID: 1500197661}
   - component: {fileID: 1500197660}
   - component: {fileID: 1500197662}
+  - component: {fileID: 1500197663}
   m_Layer: 0
   m_Name: Sparrow (1)
   m_TagString: Untagged
@@ -2327,6 +2381,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1500197663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500197659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.01
+  _popUpSpeed: 0.8
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &1503031502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,6 +3087,7 @@ GameObject:
   - component: {fileID: 1586358877589920509}
   - component: {fileID: 3595868903887613495}
   - component: {fileID: 3595868903887613497}
+  - component: {fileID: 3595868903887613498}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -3124,6 +3194,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &3595868903887613497
 MeshCollider:
@@ -3147,6 +3218,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1684090110369934898, guid: 898996aca1c2640789cbb160f2f8e38b, type: 3}
+--- !u!114 &3595868903887613498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091698910582247394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e2bfb94b64b4823bfefa2fa809acd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TreeOfBirds
+  sparrows:
+  - {fileID: 6756054962036786046}
+  - {fileID: 704408756}
+  - {fileID: 1500197659}
+  - {fileID: 816085032}
+  - {fileID: 406130384}
+  interactDistance: 10
+  player: {fileID: 3393754744409136948}
 --- !u!4 &3778659256116226280
 Transform:
   m_ObjectHideFlags: 0
@@ -3240,6 +3331,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -3401,6 +3493,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -3598,6 +3691,7 @@ GameObject:
   - component: {fileID: 6235660972229892548}
   - component: {fileID: 6756054962036786047}
   - component: {fileID: 6756054962036786048}
+  - component: {fileID: 6756054962036786050}
   m_Layer: 0
   m_Name: Sparrow_Start
   m_TagString: Untagged
@@ -3642,6 +3736,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6756054962036786050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756054962036786046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c05c22b9a5004d9b84a48a57d4f93dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bird
+  _popUpTime: 0.01
+  _popUpSpeed: 0.8
+  _player: {fileID: 8264938254608900087}
 --- !u!1 &7131005794155537430
 GameObject:
   m_ObjectHideFlags: 0
