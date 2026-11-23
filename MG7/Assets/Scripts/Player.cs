@@ -67,9 +67,10 @@ public class Player : MonoBehaviour
         // You might want to use _spawnUp and _spawnLeft to put the seed to the
         //      left and slightly above the player.
         // You will probably also need Transform.TransformDirection() ;)
-        // seed.transform.Translate(
-        //     transform.TransformDirection(transform.position.x + _spawnLeft * -1, transform.position.y +_spawnUp, 0));
-        seed.transform.Translate(_spawnLeft * -1, _spawnUp, 0);
+        seed.transform.Translate(
+            transform.TransformDirection(Vector3.left * _spawnLeft + Vector3.up * _spawnUp)
+        );
+        // seed.transform.Translate(_spawnLeft * -1, _spawnUp, 0);
 
         
         // STEP 5 -------------------------------------------------------------
